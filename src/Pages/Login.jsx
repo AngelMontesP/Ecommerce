@@ -1,5 +1,4 @@
-
-
+import '@/styles/form.css'
 
 const Login = () => {
   return (
@@ -15,10 +14,6 @@ const Login = () => {
     <div class="form-floating">
       <input type="password" class="form-control" id="floatingPassword" placeholder="Password" wfd-id="id1" />
       <label for="floatingPassword">Password</label>
-    </div>
-
-    <div class="form-check text-start my-3">
-      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault" wfd-id="id2" />
     </div>
     <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
   </form>
