@@ -13,10 +13,10 @@ const navigate = useNavigate()
     try {
       const response = await loginUserService(data)
       if (response.status === 200) {
-        navigate('/Home') // le indicamos la ruta
+        navigate('/') // le indicamos la ruta
         console.log('Usuario creado satisfactoriamente')
-
-        localStorage.setItem('token', response.data.token)
+        // Se guarda Token
+        localStorage.setItem("token", response.data.token);
       }
     } catch (error) {
       console.log('Ocurrio un error en Sigunp', error)
